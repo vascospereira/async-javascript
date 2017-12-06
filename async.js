@@ -1,5 +1,5 @@
 (function () {
-    /*
+
     var request = new XMLHttpRequest();
     request.open("GET", "data/movies.json", true);
     request.onload = function(){
@@ -46,9 +46,9 @@
         }
     };
     xhr.send(json);
-    */
 
-    /*
+
+
     // PUT to update info
     var url = "http://jsonplaceholder.typicode.com/posts/1";
     var data = {
@@ -91,21 +91,21 @@
     };
     xhr.send(null);
 
+
     // jQuery
     $.getJSON("data/players.json", data => {
            //console.log(players);
-           var players = data.players;
+           const players = data.players;
 
-           var output = '';
-           for (var i = 0; i < players.length; i++) {
+           let output = '';
+           for (let i = 0; i < players.length; i++) {
                output += '<li>' + players[i].name + '</li>';
            }
 
            $("#p").html(output);
     });
-    */
 
-    /*
+
     //Promises
     $.get("data/clubs.json")
     .then(clubs => {
@@ -118,9 +118,8 @@
     })
     .then(players => console.log(players))
     .catch(errors => console.log(errors.responseText));
-    */
 
-    /*
+
     const info = async () =>{
         const clubs = await $.get("data/clubs.json");
         const movies = await $.get("data/movies.json");
@@ -128,9 +127,8 @@
         return [clubs, movies, players];
     };
     info().then(res => console.log(res));
-    */
 
-    /*
+
     Promise.all([
         $.get("data/clubs.json"),
         $.get("data/movies.json"),
@@ -138,9 +136,8 @@
     ]).then(([clubs, movies, players]) => {
         console.log(clubs, movies, players);
     });
-    */
 
-    /*
+
     var getData = async () => {
         return await Promise.all([
             $.getJSON("data/clubs.json"),
@@ -149,10 +146,9 @@
         ]);
     };
     getData().then(res => console.log(res));
-    */
+
 
     //Generators
-    /*
     genWrap(function*() {
         const players = yield $.getJSON("data/players.json");
         console.log(players);
@@ -176,6 +172,5 @@
 
         return handle(g.next());
     }
-    */
 
 })();
