@@ -1,0 +1,25 @@
+{
+    "clubs": [
+
+        {
+            "name": "Barcelona FC"
+        },
+        {
+            "name": "Bayern München"
+        },
+        {
+            "name": "Real Madrid"
+        },
+        {
+            "name": "Juventus"
+        },
+        {
+            "name": "Manchester United"
+        },
+        {
+            "name": "PSG"
+        }
+
+    ]
+}
+
