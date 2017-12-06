@@ -12,3 +12,6 @@ Generators are functions that can be paused and resumed. The function* declarati
 Generators are functions which can be exited and later re-entered. Their context (variable bindings) will be saved across re-entrances.
 Calling a generator function does not execute its body immediately; an iterator object for the function is returned instead. When the iterator's next() method is called, the generator function's body is executed until the first yield expression, which specifies the value to be returned from the iterator or, with yield*, delegates to another generator function. The next() method returns an object with a value property containing the yielded value and a done property which indicates whether the generator has yielded its last value as a boolean. Calling the next() method with an argument will resume the generator function execution, replacing the yield expression where execution was paused with the argument from next(). 
 A return statement in a generator, when executed, will make the generator done. If a value is returned, it will be passed back as the value. A generator which has returned will not yield any more values.
+
+# Usage
+Use Web Server for Chrome (or other server) to run.
